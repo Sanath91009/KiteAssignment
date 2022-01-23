@@ -1,0 +1,65 @@
+html,
+body {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+}
+table {
+    font-size: larger;
+}
+.particularFact {
+    text-align: center;
+}
+.wrapper {
+    position: absolute;
+    display: inline;
+    float: right;
+}
+input,
+button {
+    float: left;
+    height: 38px;
+}
+td {
+    color: rgb(226, 15, 198);
+}
+th {
+    text-align: center;
+    color: green;
+}
+td:hover {
+    background-color: rgb(38, 0, 255);
+    color: rgb(255, 217, 0);
+}
+.addFacts {
+    text-align: center;
+}
+.error {
+    text-align: center;
+    color: red;
+}
+form {
+    margin-left: 33%;
+    margin-top: 10px;
+}
+h4 {
+    color: rgb(0, 60, 255);
+}
+label {
+    font-weight: bolder;
+    font-size: larger;
+    margin-right: 10px;
+}
+.Factform {
+    text-align: left;
+}
+input {
+    width: 300px;
+    background-color: transparent;
+    border: solid blue;
+    border-radius: 5px;
+}
+input:focus {
+    background-color: white;
+    border: 2px blue;
+}
