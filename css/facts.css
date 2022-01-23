@@ -22,21 +22,25 @@ button {
 }
 td {
     color: rgb(226, 15, 198);
+    font-family: "Shadows Into Light", cursive;
 }
 th {
     text-align: center;
     color: green;
+    font-family: "Shadows Into Light", cursive;
 }
-td:hover {
+img:hover {
     background-color: rgb(38, 0, 255);
     color: rgb(255, 217, 0);
 }
 .addFacts {
     text-align: center;
+    font-family: "Shadows Into Light", cursive;
 }
 .error {
     text-align: center;
     color: red;
+    font-family: "Shadows Into Light", cursive;
 }
 form {
     margin-left: 33%;
@@ -44,11 +48,13 @@ form {
 }
 h4 {
     color: rgb(0, 60, 255);
+    font-family: "Shadows Into Light", cursive;
 }
 label {
     font-weight: bolder;
     font-size: larger;
     margin-right: 10px;
+    font-family: "Shadows Into Light", cursive;
 }
 .Factform {
     text-align: left;

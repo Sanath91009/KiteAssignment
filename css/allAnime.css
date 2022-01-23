@@ -20,11 +20,13 @@ body {
 }
 td {
     text-align: center;
-    color: rgb(15, 36, 226);
+    color: rgb(226, 152, 15);
+    font-family: "Shadows Into Light", cursive;
 }
 th {
     text-align: center;
     color: rgb(31, 182, 132);
+    font-family: "Shadows Into Light", cursive;
 }
 body {
     margin: 0;
