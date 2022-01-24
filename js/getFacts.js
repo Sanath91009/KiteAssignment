@@ -25,7 +25,6 @@ async function getFacts(e) {
     }
     const apiEndpoint = apiUrl + "v1/" + `${name.value}`;
     const resp = await (await fetch(apiEndpoint)).json();
-    console.log(resp);
     if (resp.success === true) {
         let html = `
         <div class="Animefacts">
@@ -48,6 +47,7 @@ async function getFacts(e) {
         html += `</tbody></table></div>`;
         html = getParticularFact(name.value) + html;
         let body1 = document.querySelector(".addFacts");
+        document.title = `${name.value}` + " facts";
         body1.innerHTML = html;
     } else {
         let html = `<h3 class="error">Please Enter anime Name which is present in anime list!!</h3>`;
@@ -91,3 +91,28 @@ async function getFactsWithId(e) {
         facts.innerHTML = html;
     }
 }
+
+async function getAnimeNames() {
+    const apiEndpoint = apiUrl + "v1";
+    const resp = await (await fetch(apiEndpoint)).json();
+    if (resp.success === true) {
+        const animes = [];
+        const data = resp.data;
+        data.forEach((anime) => {
+            animes.push(anime.anime_name);
+        });
+        return animes;
+    }
+}
+async function GenrateDropdown() {
+    let html = "";
+    animes = await getAnimeNames();
+    animes.forEach((anime) => {
+        let htmlseg = `<option value=${anime}>`;
+        html += htmlseg;
+    });
+    var temp = document.querySelector("#AnimeNames");
+    temp.innerHTML = html;
+}
+
+GenrateDropdown();

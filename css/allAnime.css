@@ -8,6 +8,11 @@ body {
     height: 150px;
     transition: 1s;
 }
+.navbar-customclass {
+    font-family: "Shadows Into Light", cursive;
+    font-weight: bold;
+    background-color: rgb(241, 228, 248);
+}
 .image:hover {
     width: 500px;
     height: 500px;

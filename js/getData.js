@@ -6,7 +6,6 @@ async function getAnimeList() {
         let html = "";
         const data = resp.data;
         data.forEach((anime) => {
-            console.log(anime.anime_name);
             let htmlseg = `<tr><td>${anime.anime_id}</td>
             <td>${anime.anime_name}</td>
             <td><img src="${anime.anime_img}" class="image"></img></td><tr>`;

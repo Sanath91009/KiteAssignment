@@ -1,3 +1,14 @@
+html,
+body {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+}
 p {
     font-family: "Shadows Into Light", cursive;
+}
+.navbar-customclass {
+    font-family: "Shadows Into Light", cursive;
+    font-weight: bold;
+    background-color: rgb(241, 228, 248);
 }
